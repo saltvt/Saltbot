@@ -1,6 +1,14 @@
 from chatterbot import Chatbot
 from chatterbot.trainers import ChatterbotCorpusTrainer
 
+#import twitchio
+#import tweepy
+#import discord.py
+
+# Needs to have Twitter, Twitch and Discord functionality 
+
+
+
 
 saltbot = ChatBot(
     'saltbot',
@@ -9,7 +17,7 @@ saltbot = ChatBot(
 )
 trainer = ChatterBotCorpusTrainer(saltbot)
 trainer.train(
-    'chatterbot.corpus.english'
+    'chatterbot.corpus.english' #going to put chat/discord training data here
 )
 
 while True:
