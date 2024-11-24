@@ -44,3 +44,8 @@ with torch.no_grad():
     outputs_pred = model(inputs_tensor)
     print('SaltBot Predictions:')
     print(outputs_pred)
+
+#adding a function to see if the model is running to interact with the interface
+def saltBotRunning ():
+    with outputs_pred== True:
+        return True
