@@ -7,8 +7,11 @@ import json
 from atproto import Client
 import saltNN
 
-
-
+def load_config():
+    with open('config.json','r') as config_file:
+        config=json.load(config_file)
+    return config
+    
 def isRunning():
     print(saltNN.saltBotRunning)
     return saltNN.saltBotRunning
@@ -38,5 +41,5 @@ discord.IntegrationApplication(name)
 twitchio.Channel(twitchID)
 
 
-#commands the bot can use to post/interact with the world. Made it an empty array because it should be ever expanding. Optimization comes later. 
-commands=[]
+#commands the bot can use to post/interact with the world. Made it an empty array because it should be ever expanding. Optimization comes later. might be better with json
+#Just don't want alot of dependencies   

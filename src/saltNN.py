@@ -6,7 +6,7 @@ import numpy as np
 
 # need to find a place to train
 # First attempt
-# might rewrite in C idk 
+# def needs a rewrite...  
 torch.manual_seed(42)
 np.random_seed(42)
 
@@ -47,5 +47,5 @@ with torch.no_grad():
 
 #adding a function to see if the model is running to interact with the interface
 def saltBotRunning ():
-    with outputs_pred== True:
+    with outputs_pred == True:
         return True
